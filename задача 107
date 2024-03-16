@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <conio.h>
+void mainO
+{
+int n; 
+int summ; 
+int i; // счетчик циклов
+printf("Вычисление суммы положительных чисел\n");
+printf("Введите количество суммируемых чисел -> "); 
+scanf("%i", &n);
+summ = 0;
+for (i = 1; i <= n; i++) 
+    summ = summ+i;
+printf("Сумма первых %i целых положительных чисел ",n); 
+printf("равна %i", summ);
+printf("\n\nДля завершения нажмите <Enter>");
+getch();
+}
