@@ -1,0 +1,44 @@
+#include <stdio.h>
+#include <conio.h>
+void main()
+{
+int kod; 
+int dlit; 
+printf("\nВычисление стоимости разговорапо");
+printf("телефону\n");
+printf("Введите исходные данные:\n");
+printf("Длительность разговора (целое кол-во минут) ->"); 
+scanf("%i", &dlit);
+puts("Код города");
+puts("Bлaдивocтoк\t432") ; 
+puts("Mocквa\t\t095"); 
+puts("Mypмaнск\t815"); 
+puts("Caмapa\t\t846");
+printf("->");
+scanf("%i", &kod);
+printf("Город: "); 
+switch (kod)
+{
+case 432:puts("Владивосток");
+          cena = 2.2;
+          break;
+case 95: puts("Москва");
+         cena = 1; 
+        break;
+case 815:puts("Мурманск");
+          cena = 1.2;
+          break;
+case 846: puts("Самара");
+          cena = 1.4;
+          break;
+default: printf("неверно введен код.");
+          cena = 0;
+}
+if (cena != 0) {
+      summ = cena * dlit;
+      printf("Цена минуты: %i руб.\n", cena); 
+      printf("Стоимость разговора: %3.2f руб.\n", summ);
+  }
+  printf("\nДля завершения нажмите <Enter>"); 
+  getch();
+}
