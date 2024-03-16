@@ -1,0 +1,25 @@
+#inclucle <stdio.h> 
+#include <conio.h>
+№define LB -2.0
+#define НВ 2.0
+#define DX 0.5 
+void main () 
+{
+  float х,у; 
+  int n; // кол-во точек
+  int i; // счетчик циклов
+  n = (НВ - LB)/DX +1;
+  x = LB;
+  printf ("---------------\n"); 
+  printf(" X | y\n");
+  printf ("---------------\n") ; 
+  for (i = 1; i<=n; i++)
+  {
+    у = -2.4*x*x+5*x-3; 
+    printf("%6.2f | %6.2f\n" ,x,y); 
+    x += DX;
+}
+  printf("-----------------\n");
+  printf("\nДля завершения нажмите <Enter>");
+  getch(); 
+}
