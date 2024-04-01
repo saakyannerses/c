@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main()
+{
+   int elements[8] = {37, 0, 50, 46, 34, 46, 0, 13};
+   printf("Первый элемент массива равен %d\n", elements[0]);
+   printf("Второй элемент массива равен %d\n", elements[1]);
+   printf("Третий элемент массива равен %d\n", elements[2]);
+   printf("Четвертый элемент массива равен %d\n", elements[3]);
+   printf("Пятый элемент массива равен %d\n", elements[4]);
+   printf("Шестой элемент массива равен %d\n", elements[5]);
+   printf("Седьмой элемент массива равен %d\n", elements[6]);
+   printf("Восьмой элемент массива равен %d\n", elements[7]);
+
+    return 0;
+}
